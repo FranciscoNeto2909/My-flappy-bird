@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'pixel';
+    src: url(../fonts/Pixel.ttf);
+}
+[flappy]{
+    position: relative;
+    border:5px solid deepskyblue;
+    height: 700px;
+    width: 1200px;
+    margin: 15px;
+    background-color: dodgerblue;
+    overflow: hidden;
+}
+h1{
+    margin-bottom:none;
+}
+.passaro{
+    position: absolute;
+    width: 60px;
+    left: calc(50% - 30px);
+}
+.par-de-barreiras{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.barreira{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.barreira .borda{
+    height: 30px;
+    width: 130px;
+    background: linear-gradient(90deg, #639301, #a5e82e);
+    border: 2px solid black;
+}
+.barreira .corpo{
+    height: 100px;
+    width: 110px;
+    background: linear-gradient(90deg, #639301, #a5e82e);
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+.progresso{
+    position:absolute;
+    top: 10px;
+    right: 10px;
+    font-family: Pixel;
+    font-size: 70px;
+    z-index: 1;
+}
+.play{
+   position: absolute; 
+    top: 10px;
+    font-family: Pixel;
+    font-size: 20px;
+    z-index: 1;
+    border-radius:10px;
+    background:linear-gradient(160deg, #639301, #a5e82e);
+}
+footer{
+    margin: 0;
+    padding: 0;
+}
